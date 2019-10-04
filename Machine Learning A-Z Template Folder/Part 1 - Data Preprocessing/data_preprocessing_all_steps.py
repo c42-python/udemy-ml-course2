@@ -11,6 +11,7 @@ import pandas as pd
 dataset = pd.read_csv('Data.csv')
 X = dataset.iloc[:, :-1].values
 y = dataset.iloc[:, 3].values
+# y1 = dataset.iloc[:, -1:].values ??
 
 ##### STEP 3 #####
 # Taking care of missing data
