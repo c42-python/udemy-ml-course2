@@ -72,3 +72,4 @@ regressor_OLS.summary() # we see that feature #3 has the highest p value 0.06 (a
 X_opt = X[:, [0, 3]] # optimal features matrix - cycle 5
 regressor_OLS = sm.OLS(endog=y, exog=X_opt).fit()
 regressor_OLS.summary() # Finished.. none of the features have p-value above 0.05
+print(regressor_OLS.summary())
