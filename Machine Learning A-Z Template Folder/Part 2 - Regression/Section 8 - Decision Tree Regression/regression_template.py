@@ -24,6 +24,9 @@ y_train = sc_y.fit_transform(y_train)"""
 
 # Fitting the Regression Model to the dataset
 # Create your regressor here
+from sklearn.tree import DecisionTreeRegressor
+regressor = DecisionTreeRegressor(random_state=0)
+regressor.fit(Y, y)
 
 # Predicting a new result
 y_pred = regressor.predict(6.5)
